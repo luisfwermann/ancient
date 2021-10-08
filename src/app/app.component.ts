@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { LoginService } from './core/services/login.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ag-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'ancient';
+export class AppComponent implements OnInit {
+  constructor(private loginService: LoginService) {}
+
+  ngOnInit(): void {
+    this.loginService.checkCurrentUser();
+  }
 }

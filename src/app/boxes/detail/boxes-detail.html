@@ -1,0 +1,18 @@
+<ag-header></ag-header>
+
+<h3><span class="back" (click)="goBack()"></span>OPEN BOX</h3>
+
+<div class="card">
+  <ag-boxes-card [box]="box">
+    <button type="button" class="card__btn" (click)="onOpen()">I want it</button>
+  </ag-boxes-card>
+</div>
+
+<div class="item" *ngIf="openedItem">
+  <ag-img class="item__img" alt="Item {{ openedItem.name }}" [url]="openedItem.iconUrl"></ag-img>
+  <div class="item__info">
+    <div class="item__info__title">NEW ITEM WON!</div>
+    <div class="item__info__name">{{ openedItem.name }}</div>
+    <div class="item__info__value">{{ openedItem.value }} TKN</div>
+  </div>
+</div>

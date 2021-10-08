@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import './variables.scss';
+
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: $bg-color;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+  margin-left: 1rem;
+
+  .back {
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &::after {
+      content: '<';
+    }
+  }
+}

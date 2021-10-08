@@ -1,27 +1,25 @@
 # Ancient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+This project was created as a response of a challenge for an interview process I got involved.
 
-## Development server
+The goal was to use Angular with a GraphQL server to render a list of "mytery boxes" that can be opened by the user. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+When opening a box, a Subscription from GraphQL is updated, thus updating the balance of the current wallets of the user on the header of the app.
 
-## Code scaffolding
+No tests were developed for this app, so the only commands available are the usual for builiding/serving Angular applications:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm run serve`
 
-## Build
+`npm run build`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Prints from the app:
 
-## Running unit tests
+![Boxes list desktop](https://drive.google.com/uc?id=1lXlYu7t4GfcTULMKcP0WqqySTEud0YgD)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Boxes card desktop](https://drive.google.com/uc?id=1RNj6JCTQNO2T6NR7yBMbgEVljAYQV4E3)
 
-## Running end-to-end tests
+![Boxes list mobile](
+https://drive.google.com/uc?id=1U2gEYKbSA0F1BElpnFHcoIF12T_O5dVb)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Boxes card mobile](
+https://drive.google.com/uc?id=1OqLVHw6gs6e4TgN_OAe1rK4v_sAG57HF)

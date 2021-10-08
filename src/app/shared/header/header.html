@@ -1,0 +1,11 @@
+<div class="header">
+  <div *ngIf="currentUser" class="header__info">
+    <span class="header__info__user">Hello, {{ currentUser?.name }}!</span>
+    <span class="header__info__balance">Balance: {{ balance }} TKN</span>
+  </div>
+
+  <div *ngIf="!currentUser" class="header__no_login" (click)="onLoginClick()">
+    <img alt="Steam Login" src="assets/steam.svg" />
+    <span class="header__no_login__text">Login</span>
+  </div>
+</div>

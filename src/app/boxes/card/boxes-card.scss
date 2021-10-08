@@ -1,0 +1,32 @@
+@import 'variables';
+
+.card {
+  background-color: $gray;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  height: calc(100% - 1rem);
+
+  .card__info__name {
+    font-size: .8rem;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .card__info__cost {
+    margin: 0;
+    margin-top: .5rem;
+    color: $green;
+    font-weight: 700;
+  }
+
+  .card__img {
+    ::ng-deep img {
+      width: 80%;
+      filter: drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.25));
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="card" *ngIf="box">
+  <ag-img class="card__img" [url]="box.iconUrl" alt="Box - {{ box.name }}"></ag-img>
+  <div class="card__info">
+    <p class="card__info__name">{{ box.name }}</p>
+    <p class="card__info__cost">{{ box.cost }} TKN</p>
+    <ng-content></ng-content>
+  </div>
+</div>

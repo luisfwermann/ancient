@@ -1,0 +1,110 @@
+@import 'variables';
+
+.card {
+  display: flex;
+  place-items: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0 1rem;
+
+  .card__btn {
+    color: white;
+    background-color: $green;
+    font-family: inherit;
+    border: none;
+    border-radius: 3px;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+
+  ::ng-deep ag-boxes-card {
+    .card__info__name {
+      margin-top: 1rem !important;
+      font-size: 1.5rem !important;
+    }
+
+    .card__info__cost {
+      margin-top: 1rem !important;
+      font-size: 1.3rem !important;
+    }
+  }
+}
+
+.item {
+  background-color: $gray;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  width: calc(100vw - 3rem);
+  margin-bottom: 1rem;
+
+  .item__img {
+    margin-left: 1rem;
+
+    ::ng-deep img {
+      width: 80%;
+    }
+  }
+
+  .item__info {
+    margin: auto;
+    padding-right: 1rem;
+
+    .item__info__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .item__info__name {
+      margin-top: 1.2rem;
+      font-weight: bold;
+    }
+
+    .item__info__value {
+      margin-top: 1.3rem;
+      font-size: 1.3rem;
+      color: $green;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width:501px)  {
+  .card {
+
+    ::ng-deep ag-boxes-card {
+      width: 100%;
+
+      .card {
+        grid-auto-flow: column;
+        justify-content: flex-start;
+
+        .card__info {
+          margin-left: 4rem;
+          text-align: left;
+        }
+
+        .card__img img {
+          width: 30vh !important;
+          margin-top: 1rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

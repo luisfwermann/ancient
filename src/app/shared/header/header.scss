@@ -1,0 +1,31 @@
+@import 'variables';
+
+.header {
+  border-bottom: 1px solid $green;
+  padding: .6rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $bg-color;
+
+  .header__no_login {
+    font-weight: 700;
+    display: flex;
+    line-height: 1rem;
+    cursor: pointer;
+
+    .header__no_login__text {
+      margin-left: .2rem;
+    }
+  }
+
+  .header__info {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+
+    .header__info__balance {
+      text-decoration: underline;
+    }
+  }
+}
