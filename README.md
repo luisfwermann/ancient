@@ -2,7 +2,7 @@
 
 This project was created as a response of a challenge for an interview process I got involved.
 
-The goal was to use Angular with a GraphQL server to render a list of "mytery boxes" that can be opened by the user. 
+The goal was to use Angular with a GraphQL server to render a list of "mystery boxes" that can be opened by the user. 
 
 When opening a box, a Subscription from GraphQL is updated, thus updating the balance of the current wallets of the user on the header of the app.
 
